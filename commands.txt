@@ -1,0 +1,36 @@
+﻿git remote --version 	-версия
+-u тоже самое что -upstream  -сделать по умолчанию путь для пуша
+git commit -a 	-сразу и коммит и пуш
+
+
+
+
+git init			-инициализация, автосоздание скрытой папки .git / делается один раз
+git status
+git add index.html
+git commit -m "some message"	-на локальном репозитории
+git log
+
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDqOI1uizlXfe2e6kjwkVlBKjQb4omvcBSYowczRCp8eVJTdRfkzdPkIcRWdUFexYHTl/cjgEdz1aDL5/GfEKifTePrhluuAdGvrQ6IWvywGGbATEv6sE43FElHJaICQMIWNA2VvHZq6KZu2PDL0mBEPMjYIMOsk++AfTU9ae5279Rm9xjC+5hUaFtf+afY81/KAwFJ/Lyfs95FICSFWECIyZnpfk5MLgDRGVCuuo8VAPdNM37JG6tcj9ovn3UeGZqttLCixX2Daf+eW6kK4X60kuVIwCEjpBgk2oe+N9bn2i3BoWRv35PP/WVfK9Imxl6box2PS86JjCsCSoRM1nhtog6rcnwELbLw6PAiYUO47xQhRuv9RCwTzXtCEiTxxFE0bkFeWka9Mr4PaSQpaC7fbJSc1cBDjYiH+rr2q8y0gI7lecB6xG0f5yY7+kZrZpjGU7SSR+le3wOBEuwAhbfrcRsMmkIqgdTIvXroxFZcaBz4/3RflQpEu04k8UpTNO0= Семья@MV
+нельзя двигать окно,сужать или расширять, т.к. появляются энтеры в ключе
+при создании удаленного репозитория не ставить галочки для создать Readme.md и т.д.
+т.к. на удаленном появится первый коммит (до
+git remote add origin git@github.com:msemerni/ALevel_Git.git
+git remote -v	(verbose)	-лучше pull вместо fetch(который даст скачать, но возможно будут проблемы с коммитами)
+git push -u origin master	-u тоже самое что -upstream  -сделать по умолчанию путь для пуша
+
+
+
+
+
+
+
+
+
+1. выделил нужную строку. нажали колесико 		=>автоматически вставляется в командную строку
+
+2. пр. есть измененный файл index.html
+git add i "Tab"			=>автокомплит. если нет альтернатив, то => index.html
+если index.html и index2.html	=>"Tab"	+ "Tab"	
