@@ -10,6 +10,7 @@ git status
 git add index.html
 git commit -m "some message"	-на локальном репозитории
 git log
+git log --oneline
 
 ssh-keygen
 cat ~/.ssh/id_rsa.pub
@@ -18,12 +19,57 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDqOI1uizlXfe2e6kjwkVlBKjQb4omvcBSYowczRCp8
 при создании удаленного репозитория не ставить галочки для создать Readme.md и т.д.
 т.к. на удаленном появится первый коммит (до
 git remote add origin git@github.com:msemerni/ALevel_Git.git
-git remote -v	(verbose)	-лучше pull вместо fetch(который даст скачать, но возможно будут проблемы с коммитами)
+git remote -v	(verbose) 	-показать удаленный репозиторий	
+-лучше pull вместо fetch(который даст скачать, но возможно будут проблемы с коммитами)
 git push -u origin master	-u тоже самое что -upstream  -сделать по умолчанию путь для пуша
+git push --set-upstream origin main
 
 
+$ cd /e/_ALevel_FullStackJS/git/hw1
+ls - список файлов
+git pull --rebase
+
+nano dev или vim dev -редактор кода в консоли
+nano dev
+nano index.html
+vim index.html
+
+gitk - редактор коммитов
+
+git log --pretty=oneline -all
+git log --pretty=oneline --author="msemerni"
+git log --pretty=format: %h - %s : %ad [an] --date=short
+
+git checkout #commitnumber -возвращение на определенный коммит (назад в будущее)
+
+git -все комманды
+git add filename # Добавление файла filename в индекс
+git add * # Добавление всех файлов в индекс
+git add . # Добавление всех файлов в индекс
+
+git rm filename # Удаление файла из индекса
+
+git status # Просмотр статуса локального репозитория
+
+git commit # Добавление из индекса в слепок/ Требует ввода комментария
+git commit -m "comment" # Добавление из индекса в слепок c быстрым вводом комментария
+
+git diff # Сравнение веток, рабочей директории и индекса и прочие сравнения
+
+git diff --cached # сравнение проиндексированных изменений с непроиндексировной версией кода
+
+git reset # Отмена изменений
+
+git push # Залить закоммиченные изменения на сервер
+git fetch # Скачать новые изменения с сервера (без слияния)
+git pull # Скачать новые изменения с сервера (со слиянием)
 
 
+git checkout # Переключиться на ветку
+git checkout -b # Переключиться на новую ветку и создать ее
+git checkout filename # отменить все изменения в файле 
+
+git branch # удаляет, создает и перечисляет ветки
 
 
 

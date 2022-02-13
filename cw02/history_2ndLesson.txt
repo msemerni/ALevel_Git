@@ -1,0 +1,243 @@
+﻿
+Семья@MV MINGW64 /e/_ALevel_FullStackJS/git/cw02
+$ ssh msemerni@students.a-level.com.ua
+The authenticity of host 'students.a-level.com.ua (164.138.30.21)' can't be established.
+ED25519 key fingerprint is SHA256:2MIqGWjsBMTHR7IhaTzictvmF1jnMhoAXBFjdF6RMgk.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'students.a-level.com.ua' (ED25519) to the list of known hosts.
+(msemerni@students.a-level.com.ua) Password:
+msemerni@helium ~ $ pwd
+/home/msemerni
+msemerni@helium ~ $ cd ..
+msemerni@helium /home $ cd .
+msemerni@helium /home $ ^C
+msemerni@helium /home $ cd as
+asenkabsq/ asmer/     asmodeus/  astarunov/
+msemerni@helium /home $ cd asmodeus/public_html/linuxlectures/
+msemerni@helium /home/asmodeus/public_html/linuxlectures $ ^C
+msemerni@helium /home/asmodeus/public_html/linuxlectures $ cd ../../../filonitta/public_html/exam/
+msemerni@helium /home/filonitta/public_html/exam $ cd /
+msemerni@helium / $ cd ~
+msemerni@helium ~ $ cd -
+/
+msemerni@helium / $ ls
+bin   dev  home  lib32  lost+found  mnt  proc  run   sys  usr
+boot  etc  lib   lib64  media       opt  root  sbin  tmp  var
+msemerni@helium / $ dir
+bin   dev  home  lib32  lost+found  mnt  proc  run   sys  usr
+boot  etc  lib   lib64  media       opt  root  sbin  tmp  var
+msemerni@helium / $ ls
+bin   dev  home  lib32  lost+found  mnt  proc  run   sys  usr
+boot  etc  lib   lib64  media       opt  root  sbin  tmp  var
+msemerni@helium / $ ls -a
+.   bin   dev  home  lib32  lost+found  mnt  proc  run   sys  usr  .viminfo
+..  boot  etc  lib   lib64  media       opt  root  sbin  tmp  var  .well-known
+msemerni@helium / $ ls -A
+bin   dev  home  lib32  lost+found  mnt  proc  run   sys  usr  .viminfo
+boot  etc  lib   lib64  media       opt  root  sbin  tmp  var  .well-known
+msemerni@helium / $ ls -l
+итого 5092
+drwxr-xr-x    2 root root    4096 дек 21  2020 bin
+drwxr-xr-x    3 root root    4096 фев 12  2019 boot
+drwxr-xr-x   10 root root    2480 апр  1  2021 dev
+drwxr-xr-x   72 root root    4096 ноя 17 17:01 etc
+drwxr-xr-x 1021 root root   36864 ноя 17 17:01 home
+lrwxrwxrwx    1 root root       5 мая  2  2019 lib -> lib64
+drwxr-xr-x    2 root root    4096 мая  2  2019 lib32
+drwxr-xr-x   12 root root   12288 мая  2  2019 lib64
+drwx------    2 root root   16384 дек 27  2012 lost+found
+drwxr-xr-x    2 root root    4096 дек 10  2012 media
+drwxr-xr-x    2 root root    4096 дек 10  2012 mnt
+drwxr-xr-x    3 root root    4096 окт  1  2019 opt
+dr-xr-xr-x  140 root root       0 апр  1  2021 proc
+drwx------   20 root root    4096 ноя 17 17:03 root
+drwxr-xr-x   17 root root     660 апр  1  2021 run
+drwxr-xr-x    2 root root    4096 мая  2  2019 sbin
+dr-xr-xr-x   11 root root       0 апр  1  2021 sys
+drwxrwxrwt   11 root root 5095424 ноя 17 17:42 tmp
+drwxr-xr-x   14 root root    4096 янв 24  2017 usr
+drwxr-xr-x   12 root root    4096 окт 21  2016 var
+msemerni@helium / $ ^C
+msemerni@helium / $ chmod 764^C
+msemerni@helium / $ chmod 764
+chmod: пропущен операнд после «764»
+По команде «chmod --help» можно получить дополнительную информацию.
+msemerni@helium / $ chmod --help
+Использование: chmod [КЛЮЧ]... РЕЖИМ[,РЕЖИМ]… ФАЙЛ
+       или:    chmod [КЛЮЧ]… ВОСЬМ-РЕЖИМ ФАЙЛ…
+       или:    chmod [КЛЮЧ]… --reference=ОФАЙЛ ФАЙЛ…
+Смена РЕЖИМА доступа к указанным ФАЙЛАМ.
+При задании --reference, установить режим
+указанных ФАЙЛОВ как у ЭФАЙЛА.
+
+  -c, --changes          как verbose, но выводить только при выполнении
+                         изменений
+  -f, --silent, --quiet  не выводить большинство сообщений об ошибках
+  -v, --verbose          выводить диагностические сообщения по каждому файлу
+      --no-preserve-root не обрабатывать «/» особым образом (по умолчанию)
+      --preserve-root    отказываться рекурсивно обрабатывать «/»
+      --reference=ЭФАЙЛ  использовать режим доступа ЭФАЙЛА
+                         вместо значений РЕЖИМ
+  -R, --recursive        рекурсивно изменять файлы и каталоги
+      --help     показать эту справку и выйти
+      --version  показать информацию о версии и выйти
+
+
+Каждый РЕЖИМ задается в форме «[ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+».
+
+Оперативная справка GNU coreutils: <https://www.gnu.org/software/coreutils/>
+Об ошибках в переводе сообщений «chmod» сообщайте по адресу <gnu@d07.ru>
+Полная документация: <https://www.gnu.org/software/coreutils/chmod>
+или доступная локально: info '(coreutils) chmod invocation'
+msemerni@helium / $ chmod 764 test.txt
+chmod: невозможно получить доступ к 'test.txt': Нет такого файла или каталога
+msemerni@helium / $ ls
+ls        lsblk     lsipc     lslogins  lsmod     lsof
+lsattr    lscpu     lslocks   lsmem     lsns      lspci
+msemerni@helium / $ cd ls
+-bash: cd: ls: Нет такого файла или каталога
+msemerni@helium / $ cd ls
+-bash: cd: ls: Нет такого файла или каталога
+msemerni@helium / $ cd lsmem
+-bash: cd: lsmem: Нет такого файла или каталога
+msemerni@helium / $ cd ~
+msemerni@helium ~ $ ls
+msemerni@helium ~ $ pwd
+/home/msemerni
+msemerni@helium ~ $ cd ..
+msemerni@helium /home $ cd as
+asenkabsq/ asmer/     asmodeus/  astarunov/
+msemerni@helium /home $ cd as
+asenkabsq/ asmer/     asmodeus/  astarunov/
+msemerni@helium /home $ cd ascd asm
+asmer/    asmodeus/
+msemerni@helium /home $ cd ascd asmer/
+-bash: cd: слишком много аргументов
+msemerni@helium /home $ cd asm
+asmer/    asmodeus/
+msemerni@helium /home $ cd asm
+asmer/    asmodeus/
+msemerni@helium /home $ cd asmodeus/p
+public_html/ python_alvl/
+msemerni@helium /home $ cd asmodeus/python_alvl/
+msemerni@helium /home/asmodeus/python_alvl $ cd~
+-bash: cd~: команда не найдена
+msemerni@helium /home/asmodeus/python_alvl $ cd/
+-bash: cd/: Нет такого файла или каталога
+msemerni@helium /home/asmodeus/python_alvl $ cd /
+msemerni@helium / $ cd ~
+msemerni@helium ~ $ mkdir public_html
+msemerni@helium ~ $ cd public_html/
+msemerni@helium ~/public_html $ mkdir fs12
+msemerni@helium ~/public_html $ cd fs12/
+msemerni@helium ~/public_html/fs12 $ vim index.html
+msemerni@helium ~/public_html/fs12 $ ^C
+msemerni@helium ~/public_html/fs12 $ git init
+Инициализирован пустой репозиторий Git в /home/msemerni/public_html/fs12/.git/
+msemerni@helium ~/public_html/fs12 $ git status
+На ветке master
+
+Еще нет коммитов
+
+Неотслеживаемые файлы:
+  (используйте «git add <файл>…», чтобы добавить в то, что будет включено в коммит)
+
+        index.html
+
+ничего не добавлено в коммит, но есть неотслеживаемые файлы (используйте «git add», чтобы отслеживать их)
+msemerni@helium ~/public_html/fs12 $ git add *
+msemerni@helium ~/public_html/fs12 $ git commit -m "commit_one"
+
+*** Пожалуйста, скажите мне кто вы есть.
+
+Запустите
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Ваше Имя"
+
+для указания идентификационных данных аккаунта по умолчанию.
+Пропустите параметр --global для указания данных только для этого репозитория.
+
+fatal: не удалось выполнить автоопределение адреса электронной почты (получено «msemerni@helium.(none)»)
+msemerni@helium ~/public_html/fs12 $  git config --global user.email "msemerni@gmail.com"
+msemerni@helium ~/public_html/fs12 $ ^C
+msemerni@helium ~/public_html/fs12 $ git config --global user.name "Ваше Имя"
+msemerni@helium ~/public_html/fs12 $ git config --global user.name "msemerni"
+msemerni@helium ~/public_html/fs12 $ git log
+fatal: ваша текущая ветка «master» еще не содержит ни одного коммита
+msemerni@helium ~/public_html/fs12 $ git commit -m "commit_one"
+[master (корневой коммит) 9b1033f] commit_one
+ 1 file changed, 8 insertions(+)
+ create mode 100644 index.html
+msemerni@helium ~/public_html/fs12 $ git push
+fatal: Не настроена точка назначения для отправки.
+Либо укажите URL с помощью командной строки, либо настройте внешний репозиторий с помощью
+
+    git remote add <имя> <адрес>
+
+а затем отправьте изменения с помощью имени внешнего репозитория
+
+    git push <имя>
+
+msemerni@helium ~/public_html/fs12 $ git remote add origin git@github.com:msemerni/GIT_Lesson2.git
+msemerni@helium ~/public_html/fs12 $ git status
+На ветке master
+нечего коммитить, нет изменений в рабочем каталоге
+msemerni@helium ~/public_html/fs12 $ git push
+fatal: Текущая ветка master не имеет вышестоящей ветки.
+Чтобы отправить текущую ветку и установить внешнюю ветку как вышестоящую для этой ветки, используйте
+
+    git push --set-upstream origin master
+
+msemerni@helium ~/public_html/fs12 $ git push -u origin master
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,140.82.121.3' (ECDSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Не удалось прочитать из внешнего репозитория.
+
+Удостоверьтесь, что у вас есть необходимые права доступа
+и репозиторий существует.
+msemerni@helium ~/public_html/fs12 $ ssh keygen
+ssh: Could not resolve hostname keygen: Name or service not known
+msemerni@helium ~/public_html/fs12 $ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/msemerni/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/msemerni/.ssh/id_rsa.
+Your public key has been saved in /home/msemerni/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:AgFFlmG3+bLcI9ATKyJ9UD+U3Hx+sbJwXc1ptN0ZNEs msemerni@helium
+The key's randomart image is:
++---[RSA 2048]----+
+|  .+O+o+      oE.|
+|   +.=ooo . . oo@|
+|  . . *  o . +.+o|
+| . . o =. + +    |
+|. o + * So +     |
+| . o + *  .      |
+|      + o        |
+|       . .       |
+|                 |
++----[SHA256]-----+
+msemerni@helium ~/public_html/fs12 $ cat ~/
+.bash_logout   .bashrc        public_html/   .viminfo
+.bash_profile  .gitconfig     .ssh/
+msemerni@helium ~/public_html/fs12 $ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsYqHsDpKJYxg43qyBrVihBw6vM+he/oTwjoetlB+9hESounFEc908ErwyCIU9QrpGiO+ZFZLsw4QO7pPaAqRxpJI0JO8jF8A7zdZ7gwlUwhz0dQHEiayTxWOntQKzAlmBJBVZHafGZulvSe+9zchXUZL8c8O8qV5GMfo9KDbIeJvbjJZKji5+3V6w7lDIdFN1XfF5niOakuRbt+GABLGkgXZxcV10wuISWtE6V3gsTvCIbstksJ4F7/XeGZ0Z0A8Lnmlfy8IrOiCAtqr8N13O0uELuaBISIAoFboVHDsCbvmQAk3/gNzmhor0QnktCQ4+/HTNBnGZ9iYoE2T88+v7 msemerni@helium
+msemerni@helium ~/public_html/fs12 $ git push -u origin master
+Перечисление объектов: 3, готово.
+Подсчет объектов: 100% (3/3), готово.
+При сжатии изменений используется до 2 потоков
+Сжатие объектов: 100% (2/2), готово.
+Запись объектов: 100% (3/3), 298 bytes | 298.00 KiB/s, готово.
+Всего 3 (изменения 0), повторно использовано 0 (изменения 0)
+To github.com:msemerni/GIT_Lesson2.git
+ * [new branch]      master -> master
+Ветка «master» отслеживает внешнюю ветку «master» из «origin».
+msemerni@helium ~/public_html/fs12 $ client_loop: send disconnect: Connection reset by peer
+
+Семья@MV MINGW64 /e/_ALevel_FullStackJS/git/cw02
